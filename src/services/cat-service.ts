@@ -10,3 +10,7 @@ export function createCat(cat): Cat {
     catMap.set(cat.id, cat);
     return cat;
 }
+
+export function getCatById(id: number) {
+    return catMap.get(id);
+}
